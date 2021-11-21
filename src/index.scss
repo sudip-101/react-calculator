@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&display=swap");
+
+// Variables
+
+$white: #fff;
+$black: #000;
+$mid-black: #333;
+$light-blue: #196ffa;
+$dark-blue: #003f63;
+
+*,
+*::before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Outfit", sans-serif;
+}
+
+button {
+  font-family: "Outfit", sans-serif;
+  outline: none;
+  border: none;
+}
+
+@import "./containers/Calculator.scss";
+@import "./components/Button/Button.scss";
+@import "./components/Input/Input.scss";
