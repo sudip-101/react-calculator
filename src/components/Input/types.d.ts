@@ -1,0 +1,3 @@
+interface IInputProps {
+    result: string;
+}

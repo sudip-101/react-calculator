@@ -3,8 +3,8 @@ import Button from "../components/Button/Button";
 import Input from "../components/Input/Input";
 import "./Calculator.css";
 
-const Calculator = () => {
-  const [result, setResult] = useState("");
+const Calculator: React.FC = () => {
+  const [result, setResult] = useState<string>("");
 
   return (
     <div className="calculator">

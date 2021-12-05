@@ -1,6 +1,6 @@
 import React from "react";
 
-const Input = ({ result, onResultChange }) => {
+const Input: React.FC<IInputProps> = ({ result }) => {
   return <div className="input-content">{result}</div>;
 };
 

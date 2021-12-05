@@ -1,9 +1,8 @@
 import React from "react";
 
-const Button = ({ result, setResult }) => {
-  const handleClick = (e) => {
+const Button: React.FC<IButtonProps> = ({ result, setResult }) => {
+  const handleClick = (e: string) => {
     setResult(result.concat(e));
-    console.log(e);
   };
   const clearClick = () => {
     setResult("");
@@ -18,7 +17,7 @@ const Button = ({ result, setResult }) => {
       setResult("ERROR");
     }
   };
-  const itemsArr = [
+  const itemsArr: Item[] = [
     {
       symbol: "Clear",
       type: "operation",
@@ -42,7 +41,7 @@ const Button = ({ result, setResult }) => {
       type: "num",
       key: 4,
       value: "7",
-      onclick: () => handleClick(7),
+      onclick: () => handleClick("7"),
       className: "num",
       id: "",
     },
@@ -61,7 +60,7 @@ const Button = ({ result, setResult }) => {
       type: "num",
       key: 5,
       value: "8",
-      onclick: () => handleClick(8),
+      onclick: () => handleClick("8"),
       className: "num",
       id: "",
     },
@@ -70,7 +69,7 @@ const Button = ({ result, setResult }) => {
       type: "num",
       key: 6,
       value: "9",
-      onclick: () => handleClick(9),
+      onclick: () => handleClick("9"),
       className: "num",
       id: "",
     },
@@ -79,7 +78,7 @@ const Button = ({ result, setResult }) => {
       type: "num",
       key: 8,
       value: "4",
-      onclick: () => handleClick(4),
+      onclick: () => handleClick("4"),
       className: "num",
       id: "",
     },
@@ -98,7 +97,7 @@ const Button = ({ result, setResult }) => {
       type: "num",
       key: 9,
       value: "5",
-      onclick: () => handleClick(5),
+      onclick: () => handleClick("5"),
       className: "num",
       id: "",
     },
@@ -107,7 +106,7 @@ const Button = ({ result, setResult }) => {
       type: "num",
       key: 10,
       value: "6",
-      onclick: () => handleClick(6),
+      onclick: () => handleClick("6"),
       className: "num",
       id: "",
     },
@@ -116,7 +115,7 @@ const Button = ({ result, setResult }) => {
       type: "num",
       key: 12,
       value: "1",
-      onclick: () => handleClick(1),
+      onclick: () => handleClick("1"),
       className: "num",
       id: "",
     },
@@ -135,7 +134,7 @@ const Button = ({ result, setResult }) => {
       type: "num",
       key: 13,
       value: "2",
-      onclick: () => handleClick(2),
+      onclick: () => handleClick("2"),
       className: "num",
       id: "",
     },
@@ -144,7 +143,7 @@ const Button = ({ result, setResult }) => {
       type: "num",
       key: 14,
       value: "3",
-      onclick: () => handleClick(3),
+      onclick: () => handleClick("3"),
       className: "num",
       id: "",
     },
@@ -153,7 +152,7 @@ const Button = ({ result, setResult }) => {
       type: "num",
       key: 16,
       value: "0",
-      onclick: () => handleClick(0),
+      onclick: () => handleClick("0"),
       className: "num",
       id: "",
     },

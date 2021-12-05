@@ -1,4 +1,14 @@
 interface IButtonProps {
-    children?: string | JSX.Element;
-    onClick?: () => void;
+    result: string;
+    setResult: (result: string) => void;
+}
+
+interface Item {
+    symbol: string | React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>,
+    type: string,
+    key: number,
+    value: string | null,
+    onclick: () => void,
+    className: string,
+    id: string,
 }
